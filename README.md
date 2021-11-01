@@ -1,0 +1,3 @@
+MinecraftのNBT解析プログラムです
+
+JavaScriptにlong型とかfloat型とかがないのでたまに動かないかもしれない
