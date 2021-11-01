@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node src/index.ts",
-    "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "dev:level": "ts-node src/cli/cli.ts -level level.dat",
+    "dev:level:watch": "ts-node-dev --respawn src/cli/cli.ts -level level.dat",
+    "dev:level:txt": "ts-node src/cli/cli.ts -level level.dat -txt",
+    "dev:level:watch:txt": "ts-node-dev --respawn src/cli/cli.ts -level level.dat",
     "clean": "rimraf dist/*",
     "tsc": "tsc",
     "build": "npm-run-all clean tsc",
@@ -14,6 +16,9 @@
     "eslint": "eslint src/",
     "eslint:fix": "eslint src/ --fix",
     "lint": "npm-run-all eslint check-types"
+  },
+  "bin": {
+    "nbt-utils": "dist/cli/cli.ts"
   },
   "author": "Ken_Cir",
   "license": "MIT",
@@ -27,5 +32,9 @@
     "ts-node": "^10.4.0",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "python-struct": "^1.1.3",
+    "zlib": "^1.0.5"
   }
 }
