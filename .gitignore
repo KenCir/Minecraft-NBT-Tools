@@ -276,7 +276,8 @@ dist
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -298,3 +299,10 @@ Temporary Items
 .apdisk
 
 
+level.dat
+level.dat.txt
+kencir0909.dat
+flourybuckle311.dat
+kencir0909.dat-EnderChestInventory.txt
+kencir0909.dat-inventory.txt
+kencir0909.dat.txt

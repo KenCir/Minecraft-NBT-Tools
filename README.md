@@ -1,3 +1,5 @@
 MinecraftのNBT解析プログラムです
 
 JavaScriptにlong型とかfloat型とかがないのでたまに動かないかもしれない
+
+一部のデータは解析不可能 or どういうわけかPMMPに存在してない
