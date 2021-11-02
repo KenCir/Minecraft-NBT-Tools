@@ -86,4 +86,6 @@ if (format === '-level') {
 ワールドスポーンX座標: ${(tags.get_tag('SpawnZ') as IntTag).value}`);
 		console.info('level.dat.txtに解析結果を書き出しました');
 	}
+
+	process.exit();
 }
