@@ -12,10 +12,12 @@
     "dev:player:watch": "ts-node-dev --respawn src/cli/cli.ts  -player kencir0909.dat",
     "dev:player:txt": "ts-node src/cli/cli.ts -player kencir0909.dat -txt",
     "dev:player:watch:txt": "ts-node-dev --respawn src/cli/cli.ts -player kencir0909.dat -txt",
+    "dev:discordbot": "ts-node-dev --respawn src/discordbot/index.ts",
     "clean": "rimraf dist/*",
     "tsc": "tsc",
     "build": "npm-run-all clean tsc",
     "start": "node .",
+    "start:discordbot": "node .",
     "check-types": "tsc --noEmit",
     "eslint": "eslint src/",
     "eslint:fix": "eslint src/ --fix",
@@ -28,6 +30,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.11.6",
+    "@types/request": "^2.48.7",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "eslint": "^8.1.0",
@@ -38,7 +41,10 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0",
     "python-struct": "^1.1.3",
+    "request": "^2.88.2",
     "zlib": "^1.0.5"
   }
 }
