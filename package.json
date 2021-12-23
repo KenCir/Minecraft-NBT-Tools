@@ -4,15 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:level": "ts-node src/cli/cli.ts -level level.dat",
-    "dev:level:watch": "ts-node-dev --respawn src/cli/cli.ts -level level.dat",
-    "dev:level:txt": "ts-node src/cli/cli.ts -level level.dat -txt",
-    "dev:level:watch:txt": "ts-node-dev --respawn src/cli/cli.ts -level level.dat -txt",
-    "dev:player": "ts-node src/cli/cli.ts -player kencir0909.dat",
-    "dev:player:watch": "ts-node-dev --respawn src/cli/cli.ts  -player kencir0909.dat",
-    "dev:player:txt": "ts-node src/cli/cli.ts -player kencir0909.dat -txt",
-    "dev:player:watch:txt": "ts-node-dev --respawn src/cli/cli.ts -player kencir0909.dat -txt",
-    "dev:discordbot": "ts-node-dev --respawn src/discordbot/index.ts",
     "clean": "rimraf dist/*",
     "tsc": "tsc",
     "build": "npm-run-all clean tsc",
@@ -21,7 +12,9 @@
     "check-types": "tsc --noEmit",
     "eslint": "eslint src/",
     "eslint:fix": "eslint src/ --fix",
-    "lint": "npm-run-all eslint check-types"
+    "lint": "npm-run-all eslint check-types",
+    "test:player": "ts-node tests/testplayer.ts",
+    "test:discord": "ts-node tests/discordbot.ts"
   },
   "bin": {
     "nbt-utils": "dist/cli/cli.ts"
