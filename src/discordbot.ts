@@ -3,7 +3,7 @@ import { Client, Intents, MessageEmbed } from 'discord.js';
 import request from 'request';
 import { existsSync, mkdirSync, readFileSync, unlink, writeFileSync } from 'fs';
 import { gunzipSync } from 'node:zlib';
-import { ByteTag, CompoundTag, DoubleTag, FloatTag, IntTag, ListTag, NbtBeBinaryStream, ShortTag, StringTag } from '../src';
+import { ByteTag, CompoundTag, DoubleTag, FloatTag, IntTag, ListTag, NbtBeBinaryStream, ShortTag, StringTag } from '.';
 dotenv.config();
 const clinet: Client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 

@@ -1,23 +1,18 @@
 {
   "name": "minecraft-nbt-utils",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "NBT解析ツール",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist/*",
     "tsc": "tsc",
     "build": "npm-run-all clean tsc",
     "start": "node .",
-    "start:discordbot": "node .",
+    "start:discordbot": "node dist/discordbot.js",
     "check-types": "tsc --noEmit",
     "eslint": "eslint src/",
     "eslint:fix": "eslint src/ --fix",
-    "lint": "npm-run-all eslint check-types",
-    "test:player": "ts-node tests/testplayer.ts",
-    "test:discord": "ts-node tests/discordbot.ts"
-  },
-  "bin": {
-    "nbt-utils": "dist/cli/cli.ts"
+    "lint": "npm-run-all eslint check-types"
   },
   "author": "Ken_Cir",
   "license": "MIT",

@@ -91,5 +91,5 @@
   },
   "include": [
     "src/**/*"
-, "tests/discordbot.ts"  ]
+    ]
 }
