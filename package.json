@@ -12,8 +12,7 @@
     "check-types": "tsc --noEmit",
     "eslint": "eslint src/",
     "eslint:fix": "eslint src/ --fix",
-    "lint": "npm-run-all eslint check-types",
-    "install": "npm run tsc"
+    "lint": "npm-run-all eslint check-types"
   },
   "author": "Ken_Cir",
   "license": "MIT",
