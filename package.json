@@ -13,7 +13,7 @@
     "eslint": "eslint src/",
     "eslint:fix": "eslint src/ --fix",
     "lint": "npm-run-all eslint check-types",
-    "install": "npm run build"
+    "install": "npm run tsc"
   },
   "author": "Ken_Cir",
   "license": "MIT",
