@@ -20,7 +20,7 @@
     "@types/node": "^16.11.17",
     "@types/request": "^2.48.8",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
-    "@typescript-eslint/parser": "^5.19.0",
+    "@typescript-eslint/parser": "^5.25.0",
     "eslint": "^8.13.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
