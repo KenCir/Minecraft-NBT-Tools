@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "NBT解析ツール",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "clean": "rimraf dist/*",
     "tsc": "tsc -d",
@@ -11,8 +12,7 @@
     "check-types": "tsc --noEmit",
     "eslint": "eslint src/",
     "eslint:fix": "eslint src/ --fix",
-    "lint": "npm-run-all eslint check-types",
-    "install": "tsc -d"
+    "lint": "npm-run-all eslint check-types"
   },
   "author": "Ken_Cir",
   "license": "MIT",

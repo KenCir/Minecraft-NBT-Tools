@@ -1,0 +1,33 @@
+import BinaryStream from '../../binary_utils/binary_stream';
+import ByteArrayTag from '../tag/byte_array_tag';
+import ByteTag from '../tag/byte_tag';
+import CompoundTag from '../tag/compound_tag';
+import DoubleTag from '../tag/double_tag';
+import EndTag from '../tag/end_tag';
+import FloatTag from '../tag/float_tag';
+import IntArrayTag from '../tag/int_array_tag';
+import IntTag from '../tag/int_tag';
+import ListTag from '../tag/list_tag';
+import LongArrayTag from '../tag/long_array_tag';
+import LongTag from '../tag/long_tag';
+import ShortTag from '../tag/short_tag';
+import StringTag from '../tag/string_tag';
+declare class nbt_le_binary_stream extends BinaryStream {
+    read_byte_tag(): number;
+    write_byte_tag(value: number): void;
+    read_short_tag(): number;
+    write_short_tag(value: number): void;
+    read_int_tag(): number;
+    write_int_tag(value: number): void;
+    read_long_tag(): number;
+    write_long_tag(value: number): void;
+    read_float_tag(): number;
+    write_float_tag(value: number): void;
+    read_double_tag(): number;
+    write_double_tag(value: number): void;
+    read_string_tag(): string;
+    write_string_tag(value: string): void;
+    read_root_tag(): EndTag | ByteTag | ShortTag | IntTag | LongTag | FloatTag | DoubleTag | ByteArrayTag | StringTag | ListTag | CompoundTag | IntArrayTag | LongArrayTag | undefined;
+    write_root_tag(value: EndTag | ByteTag | ShortTag | IntTag | LongTag | FloatTag | DoubleTag | ByteArrayTag | StringTag | ListTag | CompoundTag | IntArrayTag | LongArrayTag): void;
+}
+export default nbt_le_binary_stream;

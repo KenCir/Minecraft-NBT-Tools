@@ -1,0 +1,1 @@
+{"version":3,"file":"end_tag.js","sourceRoot":"","sources":["../../../src/nbt/tag/end_tag.ts"],"names":[],"mappings":";;;;;AAAA,yEAAgD;AAGhD,MAAM,MAAM;IAGX;QACC,IAAI,CAAC,EAAE,GAAG,yBAAc,CAAC,OAAO,CAAC;IAClC,CAAC;IAED,sHAAsH;IAC/G,IAAI,CAAC,CAAuB;IACnC,CAAC;IAED,sHAAsH;IAC/G,KAAK,CAAC,CAAuB;IACpC,CAAC;CACD;AAED,kBAAe,MAAM,CAAC"}
